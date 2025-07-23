@@ -1,0 +1,21 @@
+# Program to convert score to grade
+
+# Ask the user for the score
+score = int(input("Enter the student's score: "))
+
+# Confirm before grading
+confirm = input("Do you want to see the grade? (yes/no): ").lower()
+
+if confirm == "yes":
+    if score >= 70:
+        print("Grade: A")
+    elif score >= 60:
+        print("Grade: B")
+    elif score >= 50:
+        print("Grade: C")
+    elif score >= 45:
+        print("Grade: D")
+    else:
+        print("Grade: F")
+else:
+    print("Grading cancelled.")
